@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <script data-src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script defer data-src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+    integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <title>TechNuel</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .copyright {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    /* Additional Styling */
+    .highlight {
+      color: #ff6f00;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="nav nav-sky">
+
+    <div class="menu-btn"> <i class="fas fa-bars"></i> </div>
+
+    <div class="nav-elements">
+
+      <ul class="nav-content">
+
+        <li> <a href="/" title="Home" class="active"> <i class="fas fa-home"></i> Home </a> </li>
+
+        <li> <a href="#" title="About"> <i class="fas fa-address-card"></i> About </a> </li>
+
+        <li>
+
+          <div class="dropdown">
+
+            <a href="#" class="dropdown-link" title="Category">
+              <i class="fas fa-camera"></i> Category <i class="fas fa-caret-down"> </i>
+            </a>
+
+            <div class="dropdown-menu">
+
+              <a href="pages/categoryAI.html" title="AI"> AI </a>
+              <a href="pages/categoryGaming.html" title="Gaming"> Gaming </a>
+              <a href="pages/categoryPhones.html" title="Phones"> Phones</a>
+              <a href="pages/categoryLaptops.html" title="Laptops"> Laptops </a>
+
+            </div>
+
+          </div>
+
+
+        </li>
+
+
+        <li> <a href="mailto:ikeeop45@gmail.com" title="Contact"> <i class="fas fa-phone"></i> Contact </a></li>
+
+
+      </ul>
+
+      <form class="search-area">
+        <input type="text" name="search" id="Search-Item" placeholder="Search Item" title="Search Item" onkeyup="find()">
+      </form>
+
+    </div>
+
+  </div>
+
+  <div class="name">TECHNUEL</div>
+  <hr class="rule">
+  <div class="container">
+    <div class="card-content" style="display: none;" id="card-content">
+      <div class="card">
+        <div class="card-image"><img
+            src="https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?b=1&s=170667a&w=0&k=20&c=iJp6e2C-l2lRmyG3ColHMpXe0QYrPnrfQQc2O6PsYC4="
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>what is ai ?: what you need to know</h3>
+          <a href="pages/page1.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://image-us.samsung.com/us/smartphones/galaxy-s23-ultra/images/galaxy-s23-ultra-highlights-kv.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of samsung galaxy s23 ultra</h3>
+          <a href="pages/page2.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="https://i.ytimg.com/vi/srAWvC-aPSQ/maxresdefault.jpg" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>nothing vs iphone 13</h3>
+          <a href="pages/page3.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://www.digitaltrends.com/wp-content/uploads/2022/10/iphone-14-pro-max-hero-photo.jpg?p=1"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of iphone 14:your choice </h3>
+          <a href="pages/page4.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://images.firstpost.com/fpimages/1200x800/fixed/jpg/2021/08/Lenovo-Legion-5-Pro-review-1.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs Of lenovo legion 5</h3>
+          <a href="pages/page5.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://s.yimg.com/uu/api/res/1.2/jAVoByRFNIUqJMqwLPdQjA--~B/aD0xMjAwO3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2023-04/9a3f11a0-e365-11ed-afdd-1e771755831b.cf.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>introducing rog ally:gaming right</h3>
+          <a href="pages/page6.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="https://root-nation.com/wp-content/uploads/2022/08/tecno-camon-19-60.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of tecno camon 19</h3>
+          <a href="pages/page7.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://www.androidauthority.com/wp-content/uploads/2022/08/apple-macbook-air-m2-closed-top-scaled.jpeg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of macbook air m3</h3>
+
+          <a href="pages/page8.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://mediapeanut.com/wp-content/uploads/Best-laptops-for-computer-science-students.png"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>best laptops for cs students 2023</h3>
+
+          <a href="pages/page9.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ibH8wi11kIE8/v1/-1x-1.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>introducing apple watch ultra</h3>
+          <a href="pages/page10.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="https://nwc.edu/academics/photos/program-photos/computer-science.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>what is computer science ?</h3>
+          <a href="pages/page11.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://assets.website-files.com/63e6b9ee2fc65e7ab40f9328/6425c2d4d9d24423a40d3729_31%20Best%20AI%20Tools%20of%202023%20-%20Redefine%20Creativity.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>top 10 AI tools in 2023</h3>
+          <a href="pages/page12.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://photos5.appleinsider.com/gallery/49449-96666-Starlight-MacBook-Air-xl.jpg" alt="thumbnail">
+        </div>
+        <div class="card-info">
+          <h3>specs of macbook air m2</h3>
+          <a href="pages/page13.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2020/06/PS5-Black.jpg" alt="thumbnail">
+        </div>
+        <div class="card-info">
+          <h3>ps5 specs:game the right way</h3>
+          <a href="pages/page14.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="data:image/jpeg;base64,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"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>nintendo switch specs</h3>
+          <a href="pages/page15.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://i0.wp.com/www.alphr.com/wp-content/uploads/2022/10/What-Is-the-Tesla-Phone-1.jpg?resize=738%2C320&ssl=1"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs for tesla pi phone</h3>
+          <a href="pages/page16.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://images.idgesg.net/images/article/2022/04/android-13-100925566-large.jpg?auto=webp&quality=85,70"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>android 13 os</h3>
+          <a href="pages/page17.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://www.macworld.com/wp-content/uploads/2023/01/ios-16-hero2-1.jpg?quality=50&strip=all"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>ios 16</h3>
+          <a href="pages/page18.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://dsptechnologygyaan.com/wp-content/uploads/2023/04/image4-7-scaled-2.jpg" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of tecno spark 10</h3>
+          <a href="pages/page19.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/laptop_alienware_x15_r2_nonlit_touchpad_gallery_7.png"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>alienware x15 r2 specs</h3>
+          <a href="pages/page20.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://imageio.forbes.com/specials-images/imageserve/5fc62477020e531728a12494/0x0.jpg?format=jpg&width=1200"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of xbox series x</h3>
+          <a href="pages/page21.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR0oxaRUQIqxOtbUHq4vBDGcH0aQMPFlbkOKef9-oV-zwiSAK7fu3C2uYjci_NMkVAuYK8EJJrd5doHxl4eMr6-VaNg8zbg35EGOojGcpvWXhxmvORN5TUQzQajCu1-k9SWPL8y1uNiFMsQtVIDxO52nMQSwDBohqDpzMhJMFma7KgMoaMJG3iCxGHLQ/w0/Artificial%20Intelligence%20Roadmap%202023.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>ai roadmap 2023 for cs students</h3>
+          <a href="pages/page22.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://i.pcmag.com/imagery/reviews/01FHRwxu0bZP2xohLcjE7Hm-11..v1676147335.jpg" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>lenovo thinkpad t16 gen 1 (amd) specs</h3>
+          <a href="pages/page23.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://www.lenovo.com/medias/lenovo-laptops-thinkpad-t16-gen-1-16-intel-hero.png?context=bWFzdGVyfHJvb3R8NTY4MTMyfGltYWdlL3BuZ3xoYzcvaDkyLzEzNzE4NzU5MzQyMTEwLnBuZ3wxNzQxODUyZThkMjRjZWVhZmIxYTkxNDliNTg0MDllOTFmYjVhMGVjNGRiMzFmYjNiNWE1MDJkYTI0Y2Q1Mzc0"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>lenovo thinkpad t16 gen 1 (intel) specs</h3>
+          <a href="pages/page24.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08148899.png" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>hp elitebook 830 G9 notebook pc </h3>
+          <a href="pages/page25.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08164328.png" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>hp elitebook 860 G9 notebook pc</h3>
+          <a href="pages/page26.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/14-5405/pdp/notebooks-inspiron-14-5405-amd-laptop-pdp-design-mod1.jpg?wid=1900&hei=935&fmt=png-alpha&qlt=90%2c0&op_usm=1.75%2c0.3%2c2%2c0&resMode=sharp&pscan=auto&fit=constrain%2c1&align=0%2c0"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>dell inspiron 14 laptop</h3>
+          <a href="pages/page27.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/13-7300/pdp/laptops_inspiron_13_7300_pdp_mod-05.jpg?fmt=jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>the dell inspiron 13 2-in-1 laptop</h3>
+          <a href="pages/page28.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://image-us.samsung.com/us/computers/galaxy-book3-pro/configurator/GB3_Ultra-2-Configurator-800x600.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>samsung book 3 ultra</h3>
+          <a href="pages/page29.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://image-us.samsung.com/SamsungUS/computing/071321/gallery/Chromebook-Saturn-02-Gallery-1600x1200.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>galaxy chromebook go</h3>
+          <a href="pages/page30.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="pagination">
+      <!--<li class="page-item previous-page disabled"><a href="#" class="page-link">Prev</a></li>
+       <li class="page-item current-page active"><a href="#" class="page-link">1</a></li>
+       <li class="page-item dots"><a href="#" class="page-link">...</a></li>
+       <li class="page-item current-page"><a href="#" class="page-link">5</a></li>
+       <li class="page-item current-page"><a href="#" class="page-link">6</a></li>
+       <li class="page-item dots"><a href="#" class="page-link">...</a></li>
+       <li class="page-item current-page"><a href="#" class="page-link">10</a></li>
+       <li class="page-item next-page"><a href="#" class="page-link">Next</a></li>-->
+    </div>
+  </div>
+  <footer class="footer">
+    <p class="copyright">
+      &copy; 2023 TechNuel. All rights reserved.
+    </p>
+  </footer>
+
+  <script type="text/javascript">
+
+
+    function getPageList(totalPages, page, maxLength) {
+
+      function range(start, end) {
+
+        return Array.from(Array(end - start + 1), (_, i) => i + start);
+      }
+
+      let sideWidth = maxLength < 9 ? 1 : 2;
+      let leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+      let rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+
+      if (totalPages <= maxLength) {
+
+        return range(1, totalPages);
+      }
+
+      if (page <= maxLength - sideWidth - 1 - rightWidth) {
+
+        return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+      }
+
+      if (page >= totalPages - sideWidth - 1 - rightWidth) {
+
+        return range(1, sideWidth).concat(0, range(totalPages - sideWidth - 1 - rightWidth - leftWidth, totalPages));
+
+      }
+      return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
+
+    }
+
+
+    $(function () {
+      let numberOfItems = $(".card-content .card").length;
+      let limitPerPage = 6;
+      let totalPages = Math.ceil(numberOfItems / limitPerPage);
+      let paginationSize = 7;
+      let currentPage;
+
+      function showPage(whichPage) {
+
+        if (whichPage < 1 || whichPage > totalPages) return false;
+
+        currentPage = whichPage;
+
+        $(".card-content .card").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+
+        $(".pagination li").slice(1, -1).remove();
+
+        getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+
+          $("<li>").addClass('page-item').addClass(item ? "current-page" : "dots")
+            .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+              .attr({ href: "javascript:void(0)" }).text(item || "...")).insertBefore(".next-page");
+        });
+
+        $(".previous-page").toggleClass("disabled", currentPage === 1);
+        $(".next-page").toggleClass("disabled", currentPage === totalPages);
+
+        return true;
+      }
+
+      $(".pagination").append(
+
+        $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({ href: "javascript:void(0)" }).text("Prev")),
+        $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({ href: "javascript:void(0)" }).text("Next")),
+
+      );
+
+      $(".card-content").show();
+      showPage(1);
+      $(document).on("click", ".pagination li.current-page:not('active')", function () {
+
+        return showPage(+$(this).text());
+      });
+
+      $(".next-page").on('click', function () {
+
+        return showPage(currentPage + 1);
+
+      });
+
+      $(".previous-page").on('click', function () {
+
+        return showPage(currentPage - 1);
+
+      });
+
+    });
+
+    $(document).ready(function () {
+      $(".menu-btn").click(function () {
+        $(this).toggleClass("bottom-border");
+        $(this).next(".nav-elements").slideToggle("slow");
+      });
+    });
+  </script>
+
+  <script src="find.js"></script>
+
+</body>
+
+</html>

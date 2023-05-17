@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <script data-src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script defer data-src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+    integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .copyright {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    /* Additional Styling */
+    .highlight {
+      color: #ff6f00;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="nav nav-sky">
+
+    <div class="menu-btn"> <i class="fas fa-bars"></i> </div>
+
+    <div class="nav-elements">
+
+      <ul class="nav-content">
+
+        <li> <a href="/" title="Home" class="active"> <i class="fas fa-home"></i> Home </a> </li>
+
+        <li> <a href="#" title="About"> <i class="fas fa-address-card"></i> About </a> </li>
+
+        <li>
+
+          <div class="dropdown">
+
+            <a href="#" class="dropdown-link" title="Category">
+              <i class="fas fa-camera"></i> Category <i class="fas fa-caret-down"> </i>
+            </a>
+
+            <div class="dropdown-menu">
+
+              <a href="/pages/categoryAI.html" title="AI"> AI </a>
+              <a href="/pages/categoryGaming.html" title="Gaming"> Gaming </a>
+              <a href="/pages/categoryPhones.html" title="Phones"> Phones</a>
+              <a href="/pages/categoryLaptops.html" title="Laptops"> Laptops </a>
+
+            </div>
+
+          </div>
+
+
+        </li>
+
+
+        <li> <a href="mailto:ikeeop45@gmail.com" title="Contact"> <i class="fas fa-phone"></i> Contact </a></li>
+
+
+      </ul>
+
+      <form class="search-area">
+        <input type="text" name="search" id="Search-Item" placeholder="Search" title="Search Item" onkeyup="find()">
+      </form>
+
+    </div>
+
+  </div>
+
+    <div class="card-content" id="card-content">
+      <div class="card">
+        <div class="card-image"><img
+            src="https://images.firstpost.com/fpimages/1200x800/fixed/jpg/2021/08/Lenovo-Legion-5-Pro-review-1.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs Of lenovo legion 5</h3>
+          <a href="/pages/page5.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://www.androidauthority.com/wp-content/uploads/2022/08/apple-macbook-air-m2-closed-top-scaled.jpeg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of macbook air m3</h3>
+
+          <a href="/pages/page8.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://mediapeanut.com/wp-content/uploads/Best-laptops-for-computer-science-students.png"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>best laptops for cs students 2023</h3>
+
+          <a href="/pages/page9.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://photos5.appleinsider.com/gallery/49449-96666-Starlight-MacBook-Air-xl.jpg" alt="thumbnail">
+        </div>
+        <div class="card-info">
+          <h3>specs of macbook air m2</h3>
+
+          <a href="/pages/page13.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/laptop_alienware_x15_r2_nonlit_touchpad_gallery_7.png"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>alienware x15 r2 specs</h3>
+
+          <a href="/pages/page20.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://i.pcmag.com/imagery/reviews/01FHRwxu0bZP2xohLcjE7Hm-11..v1676147335.jpg" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>lenovo thinkpad t16 gen 1 (amd) specs</h3>
+
+          <a href="/pages/page23.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://www.lenovo.com/medias/lenovo-laptops-thinkpad-t16-gen-1-16-intel-hero.png?context=bWFzdGVyfHJvb3R8NTY4MTMyfGltYWdlL3BuZ3xoYzcvaDkyLzEzNzE4NzU5MzQyMTEwLnBuZ3wxNzQxODUyZThkMjRjZWVhZmIxYTkxNDliNTg0MDllOTFmYjVhMGVjNGRiMzFmYjNiNWE1MDJkYTI0Y2Q1Mzc0"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>lenovo thinkpad t16 gen 1 (intel) specs</h3>
+
+          <a href="/pages/page24.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08148899.png" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>hp elitebook 830 G9 notebook pc </h3>
+
+          <a href="/pages/page25.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08164328.png" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>hp elitebook 860 G9 notebook pc</h3>
+
+          <a href="/pages/page26.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/14-5405/pdp/notebooks-inspiron-14-5405-amd-laptop-pdp-design-mod1.jpg?wid=1900&hei=935&fmt=png-alpha&qlt=90%2c0&op_usm=1.75%2c0.3%2c2%2c0&resMode=sharp&pscan=auto&fit=constrain%2c1&align=0%2c0"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>dell inspiron 14 laptop</h3>
+
+          <a href="/pages/page27.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/13-7300/pdp/laptops_inspiron_13_7300_pdp_mod-05.jpg?fmt=jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>the dell inspiron 13 2-in-1 laptop</h3>
+
+          <a href="/pages/page28.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://image-us.samsung.com/us/computers/galaxy-book3-pro/configurator/GB3_Ultra-2-Configurator-800x600.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>samsung book 3 ultra</h3>
+
+          <a href="/pages/page29.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image"><img
+            src="https://image-us.samsung.com/SamsungUS/computing/071321/gallery/Chromebook-Saturn-02-Gallery-1600x1200.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>galaxy chromebook go</h3>
+
+          <a href="/pages/page30.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  <footer class="footer">
+    <p class="copyright">
+      &copy; 2023 TechNuel. All rights reserved.
+    </p>
+  </footer>
+
+
+  <script>
+
+
+    $(document).ready(function () {
+      $(".menu-btn").click(function () {
+        $(this).toggleClass("bottom-border");
+        $(this).next(".nav-elements").slideToggle("slow");
+      });
+    });
+
+  </script>
+  <script src="/find.js">
+  </script>
+</body>
+
+</html>

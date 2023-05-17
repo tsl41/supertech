@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <script data-src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script defer data-src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+    integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer {
+      background-color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .copyright {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    /* Additional Styling */
+    .highlight {
+      color: #ff6f00;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="nav nav-sky">
+
+    <div class="menu-btn"> <i class="fas fa-bars"></i> </div>
+
+    <div class="nav-elements">
+
+      <ul class="nav-content">
+
+        <li> <a href="/" title="Home" class="active"> <i class="fas fa-home"></i> Home </a> </li>
+
+        <li> <a href="#" title="About"> <i class="fas fa-address-card"></i> About </a> </li>
+
+        <li>
+
+          <div class="dropdown">
+
+            <a href="#" class="dropdown-link" title="Category">
+              <i class="fas fa-camera"></i> Category <i class="fas fa-caret-down"> </i>
+            </a>
+
+            <div class="dropdown-menu">
+
+              <a href="/pages/categoryAI.html" title="AI"> AI </a>
+              <a href="/pages/categoryGaming.html" title="Gaming"> Gaming </a>
+              <a href="/pages/categoryPhones.html" title="Phones"> Phones</a>
+              <a href="/pages/categoryLaptops.html" title="Laptops"> Laptops </a>
+
+            </div>
+          </div>
+        </li>
+
+        <li> <a href="mailto:ikeeop45@gmail.com" title="Contact"> <i class="fas fa-phone"></i> Contact </a></li>
+      </ul>
+
+      <form class="search-area">
+        <input type="text" name="search" placeholder="Search Item" title="Search Item">
+        <button class="btn-search" name="search-button" title="Search">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card-content">
+      <div class="card">
+        <div class="card-image"><img
+            src="https://dsptechnologygyaan.com/wp-content/uploads/2023/04/image4-7-scaled-2.jpg" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of tecno spark 10</h3>
+          <a href="/pages/page19.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://i0.wp.com/www.alphr.com/wp-content/uploads/2022/10/What-Is-the-Tesla-Phone-1.jpg?resize=738%2C320&ssl=1"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs for tesla pi phone</h3>
+          <a href="/pages/page16.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="https://root-nation.com/wp-content/uploads/2022/08/tecno-camon-19-60.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of tecno camon 19</h3>
+          <a href="/pages/page7.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image"><img
+            src="https://www.digitaltrends.com/wp-content/uploads/2022/10/iphone-14-pro-max-hero-photo.jpg?p=1"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of iphone 14:your choice </h3>
+          <a href="/pages/page4.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+        <div class="card">
+          <div class="card-image"><img src="https://i.ytimg.com/vi/srAWvC-aPSQ/maxresdefault.jpg" alt="thumbnail"></div>
+          <div class="card-info">
+            <h3>nothing vs iphone 13</h3>
+            <a href="/pages/page3.html"><button class="R-button">Read more</button></a>
+          </div>
+        </div>
+        <div class="card">
+        <div class="card-image"><img
+            src="https://image-us.samsung.com/us/smartphones/galaxy-s23-ultra/images/galaxy-s23-ultra-highlights-kv.jpg"
+            alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>specs of samsung galaxy s23 ultra</h3>
+          <a href="/pages/page2.html"><button class="R-button">Read more</button></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <p class="copyright">
+      &copy; 2023 TechNuel. All rights reserved.
+    </p>
+  </footer>
+
+
+  <script>
+
+
+    $(document).ready(function () {
+      $(".menu-btn").click(function () {
+        $(this).toggleClass("bottom-border");
+        $(this).next(".nav-elements").slideToggle("slow");
+      });
+    });
+  </script>
+</body>
+
+</html>

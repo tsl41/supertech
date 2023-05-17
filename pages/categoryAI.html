@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+    <link rel="stylesheet" href="/styles/style.css">
+  <script data-src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script defer data-src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <style>
+    body {
+         margin: 0;
+         padding: 0;
+       }
+   
+       .footer {
+         background-color: #333;
+         padding: 20px;
+         text-align: center;
+       }
+   
+       .copyright {
+         font-size: 14px;
+         color: #fff;
+         margin-top: 10px;
+       }
+   
+       /* Additional Styling */
+       .highlight {
+         color: #ff6f00;
+       }
+     </style>
+</head>
+<body>
+    
+    
+  <div class="nav nav-sky">
+    
+    <div class="menu-btn"> <i class="fas fa-bars"></i> </div>
+     
+    <div class="nav-elements">
+     
+     <ul class="nav-content">
+       
+      <li> <a href="/" title="Home" class="active"> <i class="fas fa-home"></i> Home </a> </li>
+       
+      <li> <a href="#" title="About"> <i class="fas fa-address-card"></i> About </a> </li>
+       
+      <li>
+        
+       <div class="dropdown">
+         
+        <a href="#" class="dropdown-link" title="Category">
+         <i class="fas fa-camera"></i> Category <i class="fas fa-caret-down"> </i>  
+        </a>
+         
+        <div class="dropdown-menu">       
+          
+         <a href="/pages/categoryAI.html" title="AI"> AI </a>
+         <a href="/pages/categoryGaming.html" title="Gaming"> Gaming </a>
+         <a href="/pages/categoryPhones.html" title="Phones"> Phones</a>
+         <a href="/pages/categoryLaptops.html" title="Laptops"> Laptops </a>
+          
+        </div>
+         
+       </div>
+      
+        
+      </li>
+      
+       
+      <li> <a href="mailto:ikeeop45@gmail.com" title="Contact"> <i class="fas fa-phone"></i> Contact </a></li>
+      
+       
+     </ul>
+     
+     <form class="search-area">
+      <input type="text" name="search" placeholder="Search Item" title="Search Item">
+      <button class="btn-search" name="search-button" title="Search">Search</button>
+     </form>
+      
+    </div>
+    
+   </div>
+
+   <div class="container">
+   <div class="card-content">
+
+    <div class="card">
+        <div class="card-image"><img src="https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?b=1&s=170667a&w=0&k=20&c=iJp6e2C-l2lRmyG3ColHMpXe0QYrPnrfQQc2O6PsYC4=" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>what is ai ?: what you need to know</h3>
+          <a href="/pages/page1.html"><button class="R-button">Read more</button></a>
+        </div>
+        </div>
+
+     
+    <div class="card">
+        <div class="card-image"><img src="https://assets.website-files.com/63e6b9ee2fc65e7ab40f9328/6425c2d4d9d24423a40d3729_31%20Best%20AI%20Tools%20of%202023%20-%20Redefine%20Creativity.jpg" alt="thumbnail"></div>
+        <div class="card-info">
+          <h3>top 10 AI tools in 2023</h3>
+          
+          <a href="/pages/page12.html"><button class="R-button">Read more</button></a>
+        </div>
+        </div>
+    
+    </div>
+
+   </div>
+   
+  <footer class="footer">
+    <p class="copyright">
+      &copy; 2023 TechNuel. All rights reserved.
+    </p>
+  </footer>
+
+
+   <script>
+
+    
+$(document).ready(function(){
+        $(".menu-btn").click(function(){
+            $(this).toggleClass("bottom-border");
+            $(this).next(".nav-elements").slideToggle("slow");
+        });
+    });
+   </script>
+</body>
+</html>

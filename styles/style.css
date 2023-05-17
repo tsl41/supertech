@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card-content{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.card{
+
+    position: relative;
+    background: #fff;
+    max-width: 325px;
+    width: 325px;
+    height: auto;
+    margin: 25px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.card-image{
+
+    max-height: 200px;
+}
+
+.card-image img{
+
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+}
+
+.card-info{
+
+    position: relative;
+    color: #222;
+    padding: 10px 20px 20px;
+}
+
+.card-info h3{
+
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.card-info p{
+
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+
+.pagination{
+
+    text-align: center;
+    margin: 30px 30px 60px;
+    user-select: none;
+}
+
+.pagination li{
+
+    display: inline-block;
+    margin: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+
+.pagination li a{
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 45px;
+}
+
+.previous-page, .next-page{
+
+   background: #0AB1CE;
+   width: 80px;
+   border-radius: 45px;
+   cursor: pointer;
+   transition: 0.3s ease;
+}
+
+.previous-page:hover{
+
+    transform: translateX(-5px);
+}
+
+.next-page:hover{
+
+    transform: translateX(5px);
+}
+
+.current-page, .dots{
+
+   background: #ccc;
+   width: 45px;
+   border-radius: 50%;
+   cursor: pointer;
+
+}
+
+
+.active{
+
+    background: #0AB1CE;
+}
+
+.disabled {
+
+    background: #ccc;
+}
+
+
+.R-button{
+
+    background: #0AB1CE;
+    width: 80px;
+    height: 45px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    cursor: pointer;
+ }
+ 
+ .R-button:hover{
+ 
+     transform: translateY(5px);
+ }
+
+
+ .name{
+
+   font-family: fantasy;
+   font-size: 50px;
+   text-align: center;
+   margin-top: 20px;
+   color:#0AB1CE;
+
+ }
+
+ .title{
+
+    text-align: center;
+    font-family: fantasy;
+    margin-top: 20px;
+ }
+
+ .writer-info{
+
+    text-align: left;
+    margin-left: 10px;
+ }
+
+
+ .avatar{
+
+    width: 50px;
+ }
+
+
+ .article-body{
+    margin-left: 10px;
+    margin-top: 20px;
+
+ }
+
+ .social-media{
+
+    margin-top: 10px;
+ }
+
+
+ .icon{
+
+    width: 50px;
+ }
+
+
+
+
+ .thumbnail{
+
+    object-fit: cover;
+    max-width: 300px;
+    border-radius: 10%;
+    height: auto;
+ }
+
+
+ .article-body p{
+
+    
+        margin-bottom: 20px;
+        
+      
+ }
+
+
+ .article{
+
+    color: #333;
+    font-size: 15px;
+    font-family: "Segoe UI", Arial, sans-serif;
+ }
+
+
+ .related h3{
+
+
+    margin-top: 30px;
+    text-align: center;
+    font-family: fantasy;
+ }
+
+
+ .related hr{
+  
+    background-color:#1096ff;
+    height: 2px;
+    text-align: center;
+
+ }
+
+ .c-card{
+
+    width: 300px;
+    display: inline-block;
+    margin:10px;
+    box-shadow:  0 4px 8px 0;
+    text-align: center;
+ }
+
+ .c-card img{
+
+    width: 100%;
+    height: 200px;
+ }
+
+ .c-card-content{
+
+    padding: 10px;
+ }
+
+ .c-card:hover{
+
+    transform: translateX(5px);
+ }
+
+
+
+/* CSS for style layout start*/
+.nav {
+    padding: 0px 50px;
+       font-family: sans-serif;
+   }
+    
+    .nav .menu-btn {
+     display:none;
+    }
+     
+   .nav-content {
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px;
+   }
+    
+    .nav-content li {
+     display: inline-block;
+    }
+     
+     .nav-content li a {
+      text-decoration:none;
+      padding: 14px 10px;
+      display: flex;
+     }
+      
+      .nav-content li a .fa-caret-down {
+       padding: 0px 10px;
+      }
+    
+   .dropdown .close-dropdown .fa-times {
+    padding-right:10px;
+    float: right;
+    display:none;
+   }
+    
+   .dropdown:hover .dropdown-menu {
+       display: block;
+   }
+    
+   .dropdown-menu {
+       position: absolute;
+       z-index: 1;
+       min-width: 130px;
+    display:none;
+   }
+    
+   .search-area {
+
+    float: right;
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px;
+   }
+    
+    .search-area input {
+     border-radius: 4px;
+     padding: 6px;
+     transition: all .5s;
+    }
+     
+    .search-area input:focus {
+     border-radius: 4px;
+     outline: none;
+    }
+    
+   .btn-search {
+    border-radius: 4px;
+    padding: 6px;
+       cursor: pointer;
+    transition: all .5s;
+   }
+    
+   svg:not(:root).svg-inline--fa {
+       padding-right: 5px;
+   }
+   /*  CSS for style layout end*/
+    
+    
+   /* CSS Media Query for 768p start */
+   @media screen and (max-width: 768px) {
+     
+    .bottom-border-nav{
+     border-bottom:0.1px solid;
+    }
+     
+    .nav {
+     padding: 0px;
+    }
+     
+    .nav .menu-btn {
+     display:block;
+     padding: 10px;
+     font-size:2rem;
+    }
+     
+    .nav-elements {
+     display:none;
+    }
+     
+    .nav-sky .search-area {
+     border-top: 1px solid #fff;
+    }
+     
+    .nav-content {
+     display: block;
+    }
+     
+     .nav-content li {
+      display: block;
+     }
+     
+    .dropdown-menu {
+     position: relative;
+     min-width: auto;
+    }
+     
+     .dropdown-menu a {
+      padding-left: 20px !important;
+     }
+      
+    .search-area {
+     float: none;
+     width: 100%;
+     padding: 12px 8px;
+     border-top:0.1px solid;
+    }
+   } 
+   /* CSS Media Query for 768p end */
+    
+    
+   /* CSS for sky theme start*/
+   .nav-sky {
+    color:#fff;
+    background-image: linear-gradient(#44adff, #8acbfd);
+    background-attachment:fixed ;
+   }
+    
+    .nav-sky .nav-content li a {
+     color:#fff;
+    }
+     
+    .nav-sky .nav-content li a:hover, .nav-sky .dropdown:hover .dropdown-link {
+     background-image: linear-gradient(#1096ff, #5fb8ff);
+    }
+      
+    .nav-sky .dropdown-menu {
+     background-color: #a2d5fd;
+     box-shadow: 0px 5px 10px #abdaff;
+    }
+     
+    .nav-sky .search-area input {
+     color: #fff;
+     background: transparent;
+     border: 1px solid #fff;
+    }
+     
+    .nav-sky .search-area input:focus {
+     box-shadow: 0px 0px 10px #fff;
+    }
+    
+     
+    .nav-sky .search-area input::placeholder {
+     color:#fff;
+    }
+     
+    .nav-sky .btn-search {
+     background: transparent;
+     border: 1px solid #fff;    
+     color: #fff;
+    }
+     
+    .nav-sky .btn-search:hover, .btn-search:focus {
+     background-color: #0182e6;
+     border: 1px solid #0182e6;    
+     color: #fff;
+    }
+    
+    .nav-sky .active {
+     background-image: linear-gradient(#1096ff, #5fb8ff);
+    }
+   /* CSS for sky theme end*/
