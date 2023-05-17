@@ -80,8 +80,7 @@
      </ul>
      
      <form class="search-area">
-      <input type="text" name="search" placeholder="Search Item" title="Search Item">
-      <button class="btn-search" name="search-button" title="Search">Search</button>
+      <input type="text" name="search" id="Search-Item" placeholder="Search" title="Search Item" onkeyup="find()">
      </form>
       
     </div>
@@ -89,9 +88,7 @@
    </div>
 
    <div class="container">
-   <div class="card-content">
-
-     
+   <div class="card-content" id="card-content>
     <div class="card">
       <div class="card-image"><img src="https://s.yimg.com/uu/api/res/1.2/jAVoByRFNIUqJMqwLPdQjA--~B/aD0xMjAwO3c9MjAwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2023-04/9a3f11a0-e365-11ed-afdd-1e771755831b.cf.jpg" alt="thumbnail"></div>
       <div class="card-info">
@@ -141,6 +138,7 @@ $(document).ready(function(){
         });
     });
    </script>
+  <script src="/find.js"> </script>                                                 
 </body>
 </html>
     
